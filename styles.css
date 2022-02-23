@@ -19,6 +19,25 @@ h1 {
     font-size: 25px;
 }
 
+nav ul{
+    display: flex;
+    flex-direction: row;
+    background-color: lightgrey;
+    border-radius: 10px;
+    list-style-type: none;
+    padding: 2em;
+    margin: 2em;
+}
+
+nav ul li{
+    padding: 0em 2em;
+    width: 50%;
+}
+nav ul li a:hover {
+    background-color: #7DCEDE;
+    padding: 1em;
+  }
+
 nav {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -30,6 +49,8 @@ ul {
 
 img {
     border: 5px solid #0C479D;
+    margin: 1em;
+    border-radius: 10px;
 }
 
 h2 {
