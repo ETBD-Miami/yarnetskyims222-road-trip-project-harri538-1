@@ -7,6 +7,26 @@ nav {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+nav ul{
+    display: flex;
+    flex-direction: row;
+    background-color: lightgrey;
+    border-radius: 10px;
+    list-style-type: none;
+    padding: 2em;
+    margin: 2em;
+}
+
+nav ul li{
+    padding: 0em 2em;
+    width: 50%;
+} 
+
+nav ul li a:hover {
+    background-color: #7DCEDE;
+    padding: 1em;
+  }
+
 ol {
     list-style-type: none;
 }
