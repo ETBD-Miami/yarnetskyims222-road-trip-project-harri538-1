@@ -1,10 +1,10 @@
 body {
-    background: #F2F0F6;
+    background: #FEFBEA;
 }
 
 h1 {
     text-align:center;
-    background-color: #7DCEDE;
+    background-color: #003A66;
     border-radius: 25px;
     border-color: black;
     padding: 15px;
@@ -22,7 +22,7 @@ h1 {
 nav ul{
     display: flex;
     flex-direction: row;
-    background-color: lightgrey;
+    background-color: #336582;
     border-radius: 10px;
     list-style-type: none;
     padding: 2em;
@@ -64,7 +64,7 @@ p {
 }
 
 .info {
-    background-color: lightgrey;
+    background-color: #29A7D1;
     color:black;
     padding: 10px;
     margin: auto;
