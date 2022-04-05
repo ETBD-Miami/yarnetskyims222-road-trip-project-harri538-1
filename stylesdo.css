@@ -1,11 +1,11 @@
 body {
-    background: #F2F0F6;
+    background: #FEFBEA;
 }
 
 nav ul{
     display: flex;
     flex-direction: row;
-    background-color: lightgrey;
+    background-color: #336582;
     border-radius: 10px;
     list-style-type: none;
     padding: 2em;
@@ -14,7 +14,7 @@ nav ul{
 
 h1 {
     text-align:center;
-    background-color: #7DCEDE;
+    background-color: #003A66;
     border-radius: 25px;
     border-color: black;
     padding: 15px;
@@ -72,7 +72,7 @@ img {
     width: 50%;
 }
 .info {
-    background-color: lightgrey;
+    background-color: #29A7D1;
     color:black;
     padding: 10px;
     margin-top: 10px;
