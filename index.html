@@ -1,19 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>      
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your page title goes here</title>
-    <meta name="author" content="Your name goes here">
-    <meta name="description" content="describe your page here">
-
+    <title>Cincinnati USA</title>
+    <meta name="Harris" content="Nathan Harris">
+    <meta name="Cincinnati" content="Learn More About Cincinnati">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    
+    <nav>
+    <meta name="author" content="Your name goes here">
+<body>
+  <h1>Road Trip to Cincinnati</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="eat.html">What to Eat</a></li>
+            <li><a href="do.html">What to Do</a></li>
+        </ul>
+    </nav>
+    <div class="slideshow-container">
 
-    <!-- CONTENT APPEARING ON THE SCREEN GOES BETWEEN THE BODY TAGS. This is an html comment. you may delete it. -->
+        <div class="mySlides fade">
+         
+          <img src="images/Cincinnati bridge.jpg" style="width:100%">
+          <div class="text">Cincinnati Bridge</div>
+        </div>
+        
+        <div class="mySlides fade">
+         
+          <img src="images/skyline.jpg" style="width:100%">
+          <div class="text">Cincinnati Skyline</div>
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="images/stadiums.png" style="width:100%">
+          <div class="text">Cincinnati Stadiums</div>
+        </div>
+        
+       
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+   
+  <h1 id="two">Cincinnati, Ohio</h1>
+    <div class="info">
+<h2>Information</h2>
 
+<p><a href="https://wikitravel.org/en/Cincinnati">Cincinnati</a> is Ohio's third largest city and the largest metro region. It lies on the north bank of the Ohio River in 
+    Southwest Ohio in the United States of America. Known as the "Queen City" or "Queen of the West," Cincinnati was the only 19th century American city that left a favorable 
+    impression on the then 30-year-old English author <a href="https://libapps.libraries.uc.edu/liblog/2012/02/charles-dickens-in-cincinnati/">Charles Dickens.</a>“Cincinnati 
+    is a beautiful city; cheerful, thriving, and animated,” Dickens wrote in “American Notes.” 
+    “I have not often seen a place that commends itself so favorably and pleasantly to a stranger at the first glance as this does: with its clean houses of red and white, 
+    its well-paved roads, and foot-ways of bright tile. Nor does it become less prepossessing on a closer acquaintance.”</p>
+
+    <h3><a href="https://wikitravel.org/en/Cincinnati">Learn More about Cincinnati</a></h3>
+    </div>
+
+  
 </body>
+
+
+
+  
 
 </html>
